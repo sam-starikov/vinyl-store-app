@@ -1,0 +1,17 @@
+.search {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.search__input {
+    width: 100%;
+    padding: 10px 40px 10px 20px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.search__btn {
+    position: absolute;
+    right: 20px;
+}
