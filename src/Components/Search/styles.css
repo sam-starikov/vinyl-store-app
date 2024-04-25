@@ -13,5 +13,7 @@
 
 .search__btn {
     position: absolute;
-    right: 20px;
+    display: flex;
+    right: 25px;
 }
+

@@ -15,3 +15,17 @@ a {
     padding: 0 15px;
     margin: 0 auto;
 }
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: whitesmoke;
+    background-color: blueviolet;
+}
+
+.content {
+}
+
+.content__cards {
+
+}

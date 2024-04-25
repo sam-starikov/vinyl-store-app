@@ -1,0 +1,69 @@
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card__stiker {
+    position: absolute;
+}
+.card__stiker_type_top-right {
+    top: 20px;
+    right: 15px;
+}
+
+.card__stiker_type_top-left {
+    top: 20px;
+    left: 15px;
+}
+
+.card__discount {
+    padding: 2px 15px;
+    font-weight: 500;
+    color: whitesmoke;
+    background-color: brown;
+    border-radius: 25px;
+}
+
+.card__link {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-grow: 1;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.1);
+    transition: box-shadow 0.1s;
+}
+
+.card__link:hover {
+    box-shadow: 1px 1px 10px 1px rgba(100, 100, 100, 0.5);
+}
+
+.card__name {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.card__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.card__price {
+    font-size: 20px;
+    font-weight: 600;
+    justify-self: end;
+}
+.card__price_type_discount {
+    color: chartreuse;
+}
+
+.card__old-price {
+    font-size: 14px;
+    text-decoration: line-through;
+    color: grey;
+}

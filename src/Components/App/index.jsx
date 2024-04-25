@@ -1,14 +1,17 @@
-import { Header } from "../Header";
+import { CardList } from '../CardList'
+import { Header } from '../Header'
 
 export function App() {
-    return <>
-        <Header/>
-       <main className="content container">
-            {/* Sort */}
-            <div className="content__cards">
-                {/* Cards */}
-            </div>
-       </main>
-       {/* Footer */}
-    </>
+    return (
+        <>
+            <Header />
+            <main className='content container'>
+                {/* Sort */}
+                <div className='content__cards'>
+                    <CardList />
+                </div>
+            </main>
+            {/* Footer */}
+        </>
+    )
 }

@@ -1,0 +1,58 @@
+[
+    {
+        "createdAt": "2024-04-24T18:52:15.222Z",
+        "name": "Kristin Hagenes",
+        "picture": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1034.jpg",
+        "weight": "7",
+        "discount": 0,
+        "isFavourite": true,
+        "isCart": false,
+        "price": 500,
+        "stock": true,
+        "available": true,
+        "description": "gold",
+        "id": "1"
+    },
+    {
+        "createdAt": "2024-04-25T11:52:20.535Z",
+        "name": "Antoinette Schumm",
+        "picture": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1012.jpg",
+        "weight": "7",
+        "discount": 15,
+        "isFavourite": false,
+        "isCart": true,
+        "price": 300,
+        "stock": true,
+        "available": true,
+        "description": "calculating",
+        "id": "2"
+    },
+    {
+        "createdAt": "2024-04-25T05:33:36.922Z",
+        "name": "Erica Deckow",
+        "picture": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/861.jpg",
+        "weight": "4",
+        "discount": 20,
+        "isFavourite": false,
+        "isCart": true,
+        "price": 700,
+        "stock": false,
+        "available": true,
+        "description": "Ball",
+        "id": "3"
+    },
+    {
+        "createdAt": "2024-04-25T15:52:58.330Z",
+        "name": "Dwayne Dicki",
+        "picture": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/635.jpg",
+        "weight": "2",
+        "discount": 5,
+        "isFavourite": true,
+        "isCart": false,
+        "price": 450,
+        "stock": false,
+        "available": false,
+        "description": "program",
+        "id": "4"
+    }
+]
