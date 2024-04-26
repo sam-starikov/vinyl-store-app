@@ -1,0 +1,28 @@
+.btn {
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: whitesmoke;
+    background-color: blueviolet;
+    overflow: hidden;
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    background-color: cornflowerblue;
+    transition: width 0.5s;
+}
+
+.btn:hover::after {
+    width: 100%;
+}
+
+.btn__text {
+    position: relative;
+    z-index: 10;
+}

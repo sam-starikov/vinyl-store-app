@@ -1,15 +1,14 @@
 import { Logo } from '../Logo'
-import { Search } from '../Search'
 
 import './styles.css'
 
-export function Header(props) {
+export function Header({ children }) {
     return (
         <header className='header'>
             <div className='header__container container'>
                 <div className='header__body'>
                     <Logo />
-                    <Search />
+                    {children}
                 </div>
             </div>
         </header>

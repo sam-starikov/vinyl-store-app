@@ -1,15 +1,14 @@
 import './styles.css'
 
 import favouriteIcon from './ic-favourite.svg'
-import { useState } from 'react'
 
-export function Card({ name, description, price, discount, picture, weight, stock }) {
+export function Card({ name, description, price, discount, picture, weight, stock, children }) {
     const discountPrice = price - (price * discount) / 100
     return (
         <div className='card'>
             {!!discount && (
                 <div className='card__stiker card__stiker_type_top-left '>
-                    <span className='card__discount'> - {discount} % </span>
+                    <span className='card__discount'> - {discount} %</span>
                 </div>
             )}
             <div className='card__stiker card__stiker_type_top-right'>
@@ -28,7 +27,7 @@ export function Card({ name, description, price, discount, picture, weight, stoc
                     <p className='card__name'>{name}</p>
                 </div>
             </a>
-            <button className='card__cart btn btn_type_primary'> В корзину</button>
+            {children}
         </div>
     )
 }

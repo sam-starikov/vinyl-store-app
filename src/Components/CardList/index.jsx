@@ -1,13 +1,15 @@
 import './styles.css'
 
 import { Card } from '../Card'
-import data from '../../assets/data.json'
+import { Button } from '../Button'
 
-export function CardList(props) {
+export function CardList({ goods }) {
     return (
         <section className='card-list'>
-            {data.map(obj => (
-                <Card key={obj.id} {...obj} />
+            {goods.map(obj => (
+                <Card key={obj.id} {...obj}>
+                    <Button text='В корзину' />
+                </Card>
             ))}
         </section>
     )
