@@ -2,8 +2,9 @@ import { CardList } from '../CardList'
 import { Header } from '../Header'
 import { Search } from '../Search'
 
-import data from '../../assets/data.json'
 import { useEffect, useState } from 'react'
+import data from '../../assets/data.json'
+import { SearchInfo } from '../SearchInfo'
 
 export function App() {
     const [items, setItems] = useState(data)
@@ -25,9 +26,11 @@ export function App() {
     return (
         <>
             <Header>
-                <Search handleRequest={handleRequest} handleInputChange={handleInputChange} />
+                <Search handleInputChange={handleInputChange} />
             </Header>
+
             <main className='content container'>
+                <SearchInfo searchText={searchQuery} searchCount={items} />
                 {/* Sort */}
                 <div className='content__cards'>
                     <CardList goods={items} />

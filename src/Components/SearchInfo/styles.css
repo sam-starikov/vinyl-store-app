@@ -1,0 +1,16 @@
+.search-info {
+    padding: 20px 0;
+}
+
+.search-info__title {
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+    box-shadow: 1px 1px 10px 1px rgba(100, 100, 100, 0.5);
+    border-radius: 25px;
+}
+
+.search-info__text,
+.search-info__count {
+    font-weight: 600;
+}
