@@ -7,4 +7,4 @@ export const normalizeCount = (number, words_arr) => {
     return words_arr[1]
 }
 
-// export const CORRECT_DECLENSIONS = ['год', 'года', 'лет']
+export const CORRECT_DECLENSIONS = ['товар', 'товара', 'товаров']

@@ -9,7 +9,9 @@ export function CardList({ goods }) {
             {!!goods &&
                 goods.map(obj => (
                     <Card key={obj.id} {...obj}>
-                        <Button text='В корзину' />
+                        <Button>
+                            <span className='btn__text '>В корзину</span>
+                        </Button>
                     </Card>
                 ))}
         </section>
