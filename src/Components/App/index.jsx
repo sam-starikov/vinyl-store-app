@@ -1,23 +1,40 @@
 import { CardList } from '../CardList'
 import { Header } from '../Header'
 import { Search } from '../Search'
+import { SearchInfo } from '../SearchInfo'
+import { api } from '../../utils/Api'
 
 import { useEffect, useState } from 'react'
-import data from '../../assets/data.json'
-import { SearchInfo } from '../SearchInfo'
 
 export function App() {
-    const [items, setItems] = useState(data)
+    const [items, setItems] = useState([])
+    const [users, setUsers] = useState(null)
     const [searchQuery, setSearchQuery] = useState('')
 
     const handleRequest = () => {
-        const filteredItems = data.filter(obj => obj.name.toLowerCase().includes(searchQuery.toLowerCase()))
-        setItems(filteredItems)
+        /* const filteredItems = items.filter(obj => obj.name.toLowerCase().includes(searchQuery.toLowerCase()))
+        setItems(filteredItems) */
+
+        api.search(searchQuery)
+            .then(searchResult => {
+                setItems(searchResult)
+            })
+            .catch(err => console.log(err))
     }
 
     const handleInputChange = inputValue => {
         setSearchQuery(inputValue)
     }
+
+    useEffect(() => {
+        Promise.all([api.getAllData(), api.getUserInfo()])
+            .then(([itemsData, usersData]) => {
+                setItems(itemsData)
+                setUsers(usersData)
+                console.log(itemsData, usersData)
+            })
+            .catch(err => console.log(err))
+    }, [])
 
     useEffect(() => {
         handleRequest()

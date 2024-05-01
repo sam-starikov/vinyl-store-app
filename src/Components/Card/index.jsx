@@ -19,7 +19,7 @@ export function Card({ name, description, price, discount, picture, weight, stoc
                 <div className='card__info'>
                     {!!discount && <span className='card__old-price'>{price} $</span>}
                     <span className={!!discount ? 'card__price card__price_type_discount' : 'card__price'}>
-                        {discountPrice} $
+                        {discountPrice.toFixed(2)} $
                     </span>
 
                     {/* <span className='card__weight'>{weight}</span> */}
